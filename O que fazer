@@ -1,0 +1,17 @@
+O aplicativo deve pegar o formulário, imprimir um relatório, e guardar os dados numa planilha SQL na nuvem, cuja estrutura será:
+
+DB do app:
+          =>pacientes(id:
+                      name:
+                      email:
+                      telefone:
+                      relatorios_pacienteId:
+                      PK: id
+                      FK: relatorios_pacienteId REFERENCES relatorios_paciente(id_paciente)),
+
+          =>relatorios_paciente(id:
+                                id_paciente:
+                                relatorio: TEXT
+                                PK: id)
+
+WORK IN PROGRESS
